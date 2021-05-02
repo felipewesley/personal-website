@@ -1,0 +1,17 @@
+<mat-drawer-container class="main-container" autosize>
+  
+  <mat-drawer #drawer class="sidenav" [mode]="openMode" [opened]="true">
+    <div class="sidenav__main-content">
+      <h3>{{ sidenavTitle }}</h3>
+    </div>
+    <app-sidenav></app-sidenav>
+  </mat-drawer>
+
+  <div class="layout-content">
+
+    <app-header (openDrawer)="drawer.toggle()"></app-header>
+    
+    <!-- <app-footer></app-footer> -->
+  </div>
+
+</mat-drawer-container>
