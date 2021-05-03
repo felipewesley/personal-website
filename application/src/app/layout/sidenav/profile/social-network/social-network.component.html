@@ -1,0 +1,16 @@
+<a mat-raised-button [href]="socialNetwork.href" target="_blank" [title]="'Perfil do '+socialNetwork.name">
+  <div class="social-network-btn-content">
+    <span class="icon">
+      <!-- Icon Material -->
+      <mat-icon *ngIf="socialNetwork.iconType == 2 && socialNetwork.iconType != null; else imageIcon">
+        {{ socialNetwork.icon }}
+      </mat-icon>
+      <ng-template #imageIcon>
+        <img [src]="'/assets/icons/'+socialNetwork.icon" alt="social-media-icon">
+      </ng-template>
+    </span>
+    <span class="social-network-btn-content__label">
+      {{ socialNetwork.label }}
+    </span>
+  </div>
+</a>

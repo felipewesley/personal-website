@@ -1,0 +1,26 @@
+<div class="profile">
+  <h3>{{ sidenavTitle }}</h3>
+  <div class="profile__div-img">
+    <img src="/assets/img/profile.jpeg" alt="profile picture">
+  </div>
+  <small>
+    {{ age }} anos | {{ office }}
+  </small>
+</div>
+<div class="contato">
+  <mat-accordion>
+    <!-- <mat-expansion-panel hideToggle> -->
+    <mat-expansion-panel (opened)="togglePanelOpenState()"
+                         (closed)="togglePanelOpenState()">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Redes sociais
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <div class="expansion-panel-body">
+        <app-social-network *ngFor="let item of socialNetworks" [socialItem]="item"></app-social-network>
+        <!-- <p>I'm visible because I am open</p> -->
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>

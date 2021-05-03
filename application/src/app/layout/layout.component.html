@@ -2,7 +2,7 @@
   
   <mat-drawer #drawer class="sidenav" [mode]="openMode" [opened]="true">
     <div class="sidenav__main-content">
-      <h3>{{ sidenavTitle }}</h3>
+      <app-profile [title]="sidenavTitle"></app-profile>
     </div>
     <app-sidenav></app-sidenav>
   </mat-drawer>
