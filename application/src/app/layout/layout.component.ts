@@ -10,7 +10,7 @@ import { LayoutService } from './layout.service';
 export class LayoutComponent implements OnInit {
 
   sidenavTitle = 'Felipe Wesley Basso';
-  openMode = 'over'; // over | side | push
+  openMode = 'side'; // over | side | push
 
   constructor (private layoutService: LayoutService) { }
 
