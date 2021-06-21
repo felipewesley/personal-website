@@ -10,37 +10,35 @@ export class MenuListComponent implements OnInit {
 
   public showFiller = false;
 
-  public menuList: MenuItem[] = [
+  public menuList: MenuItem[] = [];
+  private _menuList: MenuItem[] = [
     {
       title: 'Início',
-      route: 'home',
+      route: '/',
       icon: 'home',
       label: 'Ir para homepage',
-      isActive: true
     }, {
       title: 'Competências',
       route: 'home',
       icon: 'lightbulb',
       label: 'Ver competências',
-      isActive: false
     }, {
       title: 'Experiência',
       route: 'home',
       icon: 'work',
       label: 'Experiências',
-      isActive: false
     }, {
       title: 'Contato',
       route: 'home',
       icon: 'perm_phone_msg',
       label: 'Contato',
-      isActive: false
     }
   ]
 
   constructor() { }
 
   ngOnInit() {
+    this.menuList = this._menuList.filter(m => m.disabled !== true).slice();
   }
 
 }

@@ -10,7 +10,7 @@
 <div class="contato">
   <mat-accordion>
     <!-- <mat-expansion-panel hideToggle> -->
-    <mat-expansion-panel (opened)="togglePanelOpenState()"
+    <mat-expansion-panel (opened)="togglePanelOpenState()" [expanded]="true"
                          (closed)="togglePanelOpenState()">
       <mat-expansion-panel-header>
         <mat-panel-title>

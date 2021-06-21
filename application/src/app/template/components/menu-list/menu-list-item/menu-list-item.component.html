@@ -1,7 +1,7 @@
-<div class="container" [ngClass]="{'menu-active': active}">
+<a class="container" [routerLink]="menuItem.route" routerLinkActive="menu-active">
   <mat-icon *ngIf="menuItem.icon != null; else menuIconDefault">{{ menuItem.icon }}</mat-icon>
   <ng-template #menuIconDefault>
     <mat-icon>dashboard</mat-icon>
   </ng-template>
   <span class="container__title">{{ menuItem.title }}</span>
-</div>
+</a>

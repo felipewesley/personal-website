@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 import { DesignModule } from '../design/design.module';
+import { TemplateRoutingModule } from './template-routing.module';
 import { TemplateComponent } from './template.component';
 import { HeaderComponent } from './components/header/header.component';
 import { ProfileComponent } from './components/profile/profile.component';
@@ -13,6 +15,8 @@ import { SocialNetworkComponent } from './components/profile/social-network/soci
   imports: [
     CommonModule,
     DesignModule,
+    TemplateRoutingModule,
+    RouterModule,
   ],
   declarations: [
     TemplateComponent,

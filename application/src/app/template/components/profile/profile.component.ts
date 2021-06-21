@@ -11,11 +11,12 @@ import { SocialNetwork } from '../../models/social-network.model';
 export class ProfileComponent implements OnInit {
 
   @Input('title') sidenavTitle: string;
-  panelOpenState = false;
+  public panelOpenState = false;
 
-  office = 'Desenvolvedor de Software';
-  age: number;
+  public office = 'Desenvolvedor de Software';
+  public age: number;
 
+  public socialNetworks: SocialNetwork[] = [];
   private _socialNetworks: SocialNetwork[] = [
     {
       name: 'Facebook',
@@ -33,7 +34,7 @@ export class ProfileComponent implements OnInit {
       name: 'GitHub',
       label: 'felipewesley',
       href: 'https://www.github.com/felipewesley/',
-      icon: 'github-icon.png'
+      icon: 'github-icon-2.png'
     }, {
       name: 'LinkedIn',
       label: 'felipe-wesley',
@@ -42,8 +43,6 @@ export class ProfileComponent implements OnInit {
     }
   ];
 
-  socialNetworks: SocialNetwork[] = [];
-
   constructor() { }
 
   ngOnInit() {
@@ -51,7 +50,7 @@ export class ProfileComponent implements OnInit {
     this.age = this.getFelipeAge();
     
     this.socialNetworks = 
-    this._socialNetworks.filter(s => s.disabled !== true);
+    this._socialNetworks.filter(s => s.disabled !== true).slice();
   }
   
   getFelipeAge(): number {

@@ -2,19 +2,23 @@ a {
     display: flex;
     flex-direction: row;
     text-decoration: none;
-    margin: 7.5px 0;
+    margin: 7.5px 0px;
     color: #fff;
 
     & .social-network-btn-content {
-        margin-top: auto;
-        margin-bottom: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: stretch;
 
+        &__icon {
+
+            display: flex;
+            align-items: center;
+
+            img { width: 22.5px; }
+        }
         &__label {
             margin-left: 15px;
         }
     }
-}
-
-.icon img {
-    width: 22.5px;
 }
