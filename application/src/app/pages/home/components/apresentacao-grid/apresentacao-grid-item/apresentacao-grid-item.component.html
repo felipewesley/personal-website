@@ -1,0 +1,19 @@
+<div class="container">
+  <mat-card 
+  matRipple
+  [matRippleCentered]="false"
+  [matRippleDisabled]="false"
+  [matRippleUnbounded]="false"
+  [matRippleRadius]="0">
+  <div class="card-header">
+    {{ title }}
+  </div>
+  <div>
+    <mat-divider></mat-divider>
+  </div>
+  <div class="card-content">
+    {{ description }}
+  </div>
+  <div class="background-absolute"> <img [src]="bgImage"> </div>
+  </mat-card>
+</div>

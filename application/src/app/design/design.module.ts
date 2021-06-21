@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
+import { MatRippleModule } from '@angular/material/core';
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import { MatCardModule } from '@angular/material/card';
     MatExpansionModule,
     MatDividerModule,
     MatCardModule,
+    MatRippleModule,
   ],
   declarations: [],
   exports: [
@@ -30,6 +32,7 @@ import { MatCardModule } from '@angular/material/card';
     MatExpansionModule,
     MatDividerModule,
     MatCardModule,
+    MatRippleModule,
   ]
 })
 export class DesignModule { }

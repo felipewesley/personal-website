@@ -14,22 +14,22 @@ export class MenuListComponent implements OnInit {
   private _menuList: MenuItem[] = [
     {
       title: 'Início',
-      route: '/',
+      route: '/home',
       icon: 'home',
       label: 'Ir para homepage',
     }, {
       title: 'Competências',
-      route: 'home',
+      route: 'none',
       icon: 'lightbulb',
       label: 'Ver competências',
     }, {
       title: 'Experiência',
-      route: 'home',
+      route: 'none',
       icon: 'work',
       label: 'Experiências',
     }, {
       title: 'Contato',
-      route: 'home',
+      route: 'none',
       icon: 'perm_phone_msg',
       label: 'Contato',
     }

@@ -1,0 +1,23 @@
+
+$grid-gap: 7.5px;
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &__content {
+
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: auto;
+        gap: $grid-gap;
+
+        .columns {
+            display: flex;
+            flex-direction: column;
+            row-gap: $grid-gap;
+        }
+    }
+}

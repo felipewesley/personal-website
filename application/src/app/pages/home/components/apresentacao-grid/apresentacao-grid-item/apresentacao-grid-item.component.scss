@@ -1,0 +1,46 @@
+.container {
+
+    max-width: 100%;
+    box-sizing: border-box !important;
+
+    mat-card {
+        
+        display: flex;
+        flex-direction: column;
+        row-gap: 5px;
+        transition: ease-in-out 0.1s;
+        background: transparent;
+        z-index: 1;
+        
+        .card-header {
+            font-size: 20px;
+        }
+
+        .card-content {
+            margin-top: 5px;
+            letter-spacing: 1.1px;
+        }
+
+        .background-absolute {
+            display: flex;
+            position: absolute;
+            box-sizing: content-box;
+            transition: ease-in-out 0.25s;
+            filter: brightness(0.25);
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        &:hover {
+            filter: brightness(1.25);
+            cursor: pointer;
+            
+            .background-absolute {
+                filter: brightness(0.35);
+                transform: scale(1.02);
+            }
+        }
+    }
+
+}

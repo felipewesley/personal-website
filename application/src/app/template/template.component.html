@@ -7,9 +7,9 @@
     <app-menu-list></app-menu-list>
   </mat-drawer>
 
-  <div class="layout-content">
+  <div class="template-content">
 
-    <app-header (openDrawer)="drawer.toggle()"></app-header>
+    <app-header class="header" (openDrawer)="drawer.toggle()"></app-header>
     <router-outlet></router-outlet>
     
   </div>

@@ -6,6 +6,7 @@ import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ApresentacaoGridComponent } from './components/apresentacao-grid/apresentacao-grid.component';
+import { ApresentacaoGridItemComponent } from './components/apresentacao-grid/apresentacao-grid-item/apresentacao-grid-item.component';
 
 @NgModule({
   imports: [
@@ -17,6 +18,7 @@ import { ApresentacaoGridComponent } from './components/apresentacao-grid/aprese
     HomeComponent,
     WelcomeComponent,
     ApresentacaoGridComponent,
+    ApresentacaoGridItemComponent,
   ]
 })
 export class HomeModule { }

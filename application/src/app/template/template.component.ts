@@ -10,7 +10,7 @@ import { distinctUntilChanged } from 'rxjs/operators';
 })
 export class TemplateComponent implements OnInit, OnDestroy {
 
-  public maxWidth = 800;
+  public maxWidth = 1000;
   public sidenavTitle = 'Felipe Wesley Basso';
   public sidenavMode = 'side'; // over | side | push
 
