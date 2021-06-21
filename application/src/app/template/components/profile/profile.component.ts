@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SocialNetworkIconType } from '../models/social-network-icon-type.enum';
-import { SocialNetwork } from '../models/social-network.model';
+import { SocialNetworkIconType } from '../../models/social-network-icon-type.enum';
+import { SocialNetwork } from '../../models/social-network.model';
+
 
 @Component({
   selector: 'app-profile',
