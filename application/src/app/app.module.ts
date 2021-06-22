@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DesignModule } from './design/design.module';
 import { TemplateModule } from './template/template.module';
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { SharedModule } from './shared/shared.module';
+import { NotificationService } from './shared/services/notification.service';
 
 @NgModule({
   declarations: [
@@ -13,12 +16,16 @@ import { TemplateModule } from './template/template.module';
   ],
   imports: [
     BrowserModule,
+    ClipboardModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     DesignModule,
+    SharedModule,
     TemplateModule,
   ],
-  providers: [],
+  providers: [
+    NotificationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
