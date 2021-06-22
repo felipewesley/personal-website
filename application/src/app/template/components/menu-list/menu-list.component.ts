@@ -21,7 +21,7 @@ export class MenuListComponent implements OnInit {
       label: 'Ir para homepage',
     }, {
       title: 'Competências',
-      route: 'none',
+      route: 'competencias',
       icon: 'lightbulb',
       label: 'Ver competências',
     }, {

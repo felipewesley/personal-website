@@ -10,7 +10,9 @@
   <div class="template-content">
 
     <app-header class="header" (openDrawer)="drawer.toggle()"></app-header>
-    <router-outlet></router-outlet>
+    <div class="template-content__container">
+      <router-outlet></router-outlet>
+    </div>
     
   </div>
 
