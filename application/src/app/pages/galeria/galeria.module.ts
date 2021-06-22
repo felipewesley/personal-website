@@ -4,6 +4,7 @@ import { GaleriaComponent } from './galeria.component';
 import { GaleriaGridComponent } from './components/galeria-grid/galeria-grid.component';
 import { DesignModule } from 'src/app/design/design.module';
 import { GaleriaRoutingModule } from './galeria-routing.module';
+import { GaleriaHeaderComponent } from './components/galeria-header/galeria-header.component';
 
 @NgModule({
   imports: [
@@ -13,7 +14,8 @@ import { GaleriaRoutingModule } from './galeria-routing.module';
   ],
   declarations: [
     GaleriaComponent,
-    GaleriaGridComponent
+    GaleriaGridComponent,
+    GaleriaHeaderComponent,
   ]
 })
 export class GaleriaModule { }
