@@ -2,6 +2,8 @@
   <app-menu-list-item 
     *ngFor="let menuItem of menuList" 
     [item]="menuItem" 
-    [active]="menuItem.isActive">
+    [active]="menuItem.isActive"
+    (onNavigate)="onNavigate.emit(true)"
+    >
   </app-menu-list-item>
 </div>

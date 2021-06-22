@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { MenuItem } from '../../models/menu-item.model';
 
 @Component({
@@ -7,6 +7,8 @@ import { MenuItem } from '../../models/menu-item.model';
   styleUrls: ['./menu-list.component.scss']
 })
 export class MenuListComponent implements OnInit {
+
+  @Output() public onNavigate = new EventEmitter<boolean>();
 
   public showFiller = false;
 

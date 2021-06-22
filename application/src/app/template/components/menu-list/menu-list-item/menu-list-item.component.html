@@ -1,4 +1,4 @@
-<a class="container" [routerLink]="menuItem.route" routerLinkActive="menu-active">
+<a class="container" [routerLink]="menuItem.route" routerLinkActive="menu-active" (click)="onNavigate.emit(true)">
   <mat-icon *ngIf="menuItem.icon != null; else menuIconDefault">{{ menuItem.icon }}</mat-icon>
   <ng-template #menuIconDefault>
     <mat-icon>dashboard</mat-icon>

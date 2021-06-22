@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { MenuItem } from 'src/app/template/models/menu-item.model';
 
 @Component({
@@ -10,6 +10,7 @@ export class MenuListItemComponent implements OnInit {
 
   @Input('active') active: boolean = false;
   @Input('item') menuItem: MenuItem;
+  @Output() onNavigate = new EventEmitter<boolean>();
 
   constructor() { }
 
