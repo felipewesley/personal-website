@@ -10,6 +10,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatCardModule } from '@angular/material/card';
 import { MatRippleModule } from '@angular/material/core';
+import { MatGridListModule } from '@angular/material/grid-list';
 
 @NgModule({
   imports: [
@@ -22,6 +23,7 @@ import { MatRippleModule } from '@angular/material/core';
     MatDividerModule,
     MatCardModule,
     MatRippleModule,
+    MatGridListModule,
   ],
   declarations: [],
   exports: [
@@ -33,6 +35,7 @@ import { MatRippleModule } from '@angular/material/core';
     MatDividerModule,
     MatCardModule,
     MatRippleModule,
+    MatGridListModule,
   ]
 })
 export class DesignModule { }
