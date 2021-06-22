@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit {
     private notificationService: NotificationService
   ) { }
 
-  ngOnInit() { this.openShare(); }
+  ngOnInit() { }
 
   onMenuClick(): void {
 
