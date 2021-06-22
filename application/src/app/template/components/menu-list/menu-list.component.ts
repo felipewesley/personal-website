@@ -28,6 +28,11 @@ export class MenuListComponent implements OnInit {
       icon: 'work',
       label: 'Experiências',
     }, {
+      title: 'Galeria',
+      route: 'galeria',
+      icon: 'collections',
+      label: 'Galeria',
+    } ,{
       title: 'Contato',
       route: 'none',
       icon: 'perm_phone_msg',
