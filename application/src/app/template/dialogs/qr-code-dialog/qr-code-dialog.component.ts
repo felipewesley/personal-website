@@ -8,7 +8,7 @@ import { MatDialogRef } from '@angular/material/dialog';
 })
 export class QrCodeDialogComponent implements OnInit {
 
-  public felipeWebpageUrl = 'https://www.google.com';
+  public felipeWebpageUrl = 'https://felipewesley.github.io/felipewesley/';
 
   constructor(private dialogRef: MatDialogRef<QrCodeDialogComponent>) { }
 
