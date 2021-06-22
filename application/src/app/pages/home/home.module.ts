@@ -7,10 +7,12 @@ import { HomeComponent } from './home.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { ApresentacaoGridComponent } from './components/apresentacao-grid/apresentacao-grid.component';
 import { ApresentacaoGridItemComponent } from './components/apresentacao-grid/apresentacao-grid-item/apresentacao-grid-item.component';
+import { BaseModule } from 'src/app/base/base.module';
 
 @NgModule({
   imports: [
     CommonModule,
+    BaseModule,
     DesignModule,
     HomeRoutingModule,
   ],
