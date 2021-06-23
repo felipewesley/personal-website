@@ -12,6 +12,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatRippleModule } from '@angular/material/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+
+// Importação CDK Angular Material
+import { CdkAccordionModule } from '@angular/cdk/accordion';
 
 @NgModule({
   imports: [
@@ -26,6 +30,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatRippleModule,
     MatGridListModule,
     MatDialogModule,
+    MatCheckboxModule,
+
+    CdkAccordionModule,
   ],
   declarations: [],
   exports: [
@@ -39,6 +46,9 @@ import { MatDialogModule } from '@angular/material/dialog';
     MatRippleModule,
     MatGridListModule,
     MatDialogModule,
+    MatCheckboxModule,
+
+    CdkAccordionModule,
   ]
 })
 export class DesignModule { }

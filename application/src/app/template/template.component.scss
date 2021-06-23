@@ -1,13 +1,13 @@
 .main-container {
     width: 100vw;
     height: 100vh;
-    border: 1px solid rgba(0, 0, 0, 0.5);
+    // border: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .header {
     position: sticky;
     position: -webkit-sticky; /* For macOS/iOS Safari */
-    // top: 0; /* Sets the sticky toolbar to be on top */
+    top: 0; /* Sets the sticky toolbar to be on top */
     z-index: 999; /* Ensure that your app's content doesn't overlap the toolbar */
 }
 

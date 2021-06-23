@@ -3,4 +3,58 @@
       <app-base-header [title]="'Competências'" [icon]="'lightbulb'">
       </app-base-header>
   </div>
+  <div class="container__content">
+
+    <div class="action-buttons">
+      <button mat-raised-button class="btn-expand-all" (click)="accordion.openAll()">
+        Exibir tudo
+      </button>
+      <button mat-button (click)="accordion.closeAll()">
+        Esconder tudo
+      </button>
+    </div>
+    <mat-accordion class="accordion-container" multi>
+      
+      <!-- SOFT SKILLS -->
+      <mat-expansion-panel [expanded]="true">
+        <mat-expansion-panel-header>
+          <mat-panel-title>Soft Skills</mat-panel-title>
+          <mat-panel-description>
+            Habilidades comportamentais
+            <mat-icon>account_circle</mat-icon>
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="accordion-container__content">
+          <app-soft-skills></app-soft-skills>
+        </div>
+      </mat-expansion-panel>
+      <!-- / SOFT SKILLS -->
+
+      <!-- GERAL -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Geral</mat-panel-title>
+          <mat-panel-description>Conhecimentos gerais relevantes</mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="accordion-container__content">
+          <app-geral></app-geral>
+        </div>
+      </mat-expansion-panel>
+      <!-- / GERAL -->
+    
+      <!-- TECNICO -->
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title>Técnico</mat-panel-title>
+          <mat-panel-description>Conhecimentos técnicos</mat-panel-description>
+        </mat-expansion-panel-header>
+        <div class="accordion-container__content">
+          <app-tecnologias></app-tecnologias>
+        </div>
+      </mat-expansion-panel>
+      <!-- TECNICO -->
+
+    </mat-accordion>    
+    
+  </div>
 </div>
