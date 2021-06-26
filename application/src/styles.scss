@@ -25,7 +25,14 @@ body {
 }
 
 //=========================================================================
+/*
+ * Default colors
+ *
+ */
+ $default: #002fff;
 
+
+//=========================================================================
 /*
  * Snackbar styles for success, error, warning and notify
  *
@@ -37,7 +44,7 @@ body {
          font-weight: initial;
      }
  }
- $snackbar-notify-bg-color: #002fff;
+ $snackbar-notify-bg-color: $default;
  $snackbar-notify-font-color: #fff;
  .snackbar-notify {
      background: $snackbar-notify-bg-color;
@@ -73,3 +80,13 @@ body {
          color: $snackbar-warning-font-color;
      }
  }
+
+//=========================================================================
+/*
+ * Button styles
+ *
+ */
+ .btn-primary {
+    background: $default;
+    color: #fff;
+}
