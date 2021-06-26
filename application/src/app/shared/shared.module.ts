@@ -11,6 +11,9 @@ import { UntilTodayPipe } from './pipes/until-today.pipe';
   ],
   declarations: [
     UntilTodayPipe,
+  ],
+  exports: [
+    UntilTodayPipe,
   ]
 })
 export class SharedModule { }
