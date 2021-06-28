@@ -18,6 +18,10 @@ const routes: Routes = [
     {
       path: 'competencias',
       loadChildren: () => import("../pages/competencias/competencias.module").then(m => m.CompetenciasModule)
+    },
+    {
+      path: 'contato',
+      loadChildren: () => import("../pages/contato/contato.module").then(m => m.ContatoModule)
     }
 ];
 

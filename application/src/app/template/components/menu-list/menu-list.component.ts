@@ -36,7 +36,7 @@ export class MenuListComponent implements OnInit {
       label: 'Galeria',
     } ,{
       title: 'Contato',
-      route: 'none',
+      route: 'contato',
       icon: 'perm_phone_msg',
       label: 'Contato',
     }
