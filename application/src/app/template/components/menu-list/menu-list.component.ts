@@ -1,5 +1,6 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
-import { MenuItem } from '../../models/menu-item.model';
+import { navigation } from 'src/app/base/navigation/navigation';
+import { MenuItem } from '../../../base/models/menu-item.model';
 
 @Component({
   selector: 'app-menu-list',
@@ -13,34 +14,7 @@ export class MenuListComponent implements OnInit {
   public showFiller = false;
 
   public menuList: MenuItem[] = [];
-  private _menuList: MenuItem[] = [
-    {
-      title: 'Início',
-      route: '/home',
-      icon: 'home',
-      label: 'Ir para homepage',
-    }, {
-      title: 'Competências',
-      route: 'competencias',
-      icon: 'lightbulb',
-      label: 'Ver competências',
-    }, {
-      title: 'Experiência',
-      route: 'none',
-      icon: 'work',
-      label: 'Experiências',
-    }, {
-      title: 'Galeria',
-      route: 'galeria',
-      icon: 'collections',
-      label: 'Galeria',
-    } ,{
-      title: 'Contato',
-      route: 'contato',
-      icon: 'perm_phone_msg',
-      label: 'Contato',
-    }
-  ]
+  private _menuList: MenuItem[] = navigation;
 
   constructor() { }
 
