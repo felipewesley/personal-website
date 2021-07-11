@@ -8,10 +8,11 @@ $grid-gap: 7.5px;
     gap: 10px;
 
     &__header {
-        display: flex;
-        letter-spacing: 1.01px;
-        line-height: 22px;
-        align-items: center;
+
+        .card {
+            display: flex;
+            align-items: center;
+        }
     }
 
     &__content {
