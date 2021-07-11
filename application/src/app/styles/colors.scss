@@ -1,2 +1,4 @@
-$default-accent: red;
-$menu-item-bg: #002fff;
+@import "/src/styles.scss";
+
+// Default primary color used in application
+$app-primary-default: $app-primary;

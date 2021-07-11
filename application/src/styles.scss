@@ -29,7 +29,7 @@ body {
  * Default colors
  *
  */
- $default: #002fff;
+ $app-primary: #0004ff;
 
 
 //=========================================================================
@@ -44,7 +44,7 @@ body {
          font-weight: initial;
      }
  }
- $snackbar-notify-bg-color: $default;
+ $snackbar-notify-bg-color: $app-primary;
  $snackbar-notify-font-color: #fff;
  .snackbar-notify {
      background: $snackbar-notify-bg-color;
