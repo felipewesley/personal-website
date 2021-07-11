@@ -2,8 +2,11 @@
   <mat-icon>share</mat-icon>
   Compartilhe
 </h1>
-<div mat-dialog-content>
-  Compartilhe este site com amigos, para que conheçam meu trabalho.
+<div mat-dialog-content class="dialog-content">
+  <span>
+    Compartilhe este site com amigos, para que conheçam meu trabalho.
+  </span>
+  <mat-divider></mat-divider>
   <p>Basta escanear ou tirar print do QR-Code abaixo:</p>
   <div class="qr-code-div">
     <div class="header">
@@ -15,7 +18,7 @@
     </div>
   </div>
 </div>
-<div mat-dialog-actions class="actions">
+<div mat-dialog-actions class="dialog-actions">
   <button mat-raised-button mat-dialog-close>Fechar</button>
   <button mat-raised-button color="accent" [cdkCopyToClipboard]="felipeWebpageUrl" (click)="onCopyToClipboard()">
     <mat-icon>content_copy</mat-icon> Copiar URL
