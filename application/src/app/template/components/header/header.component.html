@@ -1,5 +1,7 @@
 <mat-toolbar>
-  <button mat-icon-button class="header-icon" aria-label="Menu" (click)="onMenuClick()">
+  <button mat-icon-button 
+    matTooltip="Mostrar/esconder navegação" class="header-icon" 
+    aria-label="Menu" (click)="onMenuClick()">
     <mat-icon>menu</mat-icon>
   </button>
   <span>{{ title }}</span>
@@ -7,7 +9,9 @@
   <!-- <button mat-icon-button class="header-icon favorite-icon" aria-label="Favoritos">
     <mat-icon>favorite</mat-icon>
   </button> -->
-  <button mat-icon-button class="header-icon" aria-label="Compartilhar" (click)="openShare()">
+  <button mat-icon-button 
+    matTooltip="Compartilhar este site" class="header-icon" 
+    aria-label="Compartilhar" (click)="openShare()">
     <mat-icon>share</mat-icon>
   </button>
 </mat-toolbar>

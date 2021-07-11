@@ -1,8 +1,12 @@
 @import '../../../../styles/colors.scss';
 
 .menu-active {
-    background-color: $app-primary-default;
+    background-color: $app-primary-default !important;
     font-weight: bold;
+
+    &:hover {
+        filter: saturate(0.75);
+    }
 }
 
 .container {
@@ -23,5 +27,9 @@
         margin-left: 15px;
         margin-top: auto;
         margin-bottom: auto;
+    }
+
+    &:hover {
+        background: #3e3e3e;
     }
 }

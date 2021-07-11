@@ -13,6 +13,7 @@ import { MatRippleModule } from '@angular/material/core';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 // Importação CDK Angular Material
 import { CdkAccordionModule } from '@angular/cdk/accordion';
@@ -31,6 +32,7 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
     MatGridListModule,
     MatDialogModule,
     MatCheckboxModule,
+    MatTooltipModule,
 
     CdkAccordionModule,
   ],
@@ -47,6 +49,7 @@ import { CdkAccordionModule } from '@angular/cdk/accordion';
     MatGridListModule,
     MatDialogModule,
     MatCheckboxModule,
+    MatTooltipModule,
 
     CdkAccordionModule,
   ]

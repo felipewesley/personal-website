@@ -10,26 +10,26 @@ export const navigation: MenuItem[] = [
         title: 'Formação',
         route: 'formacao',
         icon: 'school',
-        label: 'Formação',
+        label: 'Formação acadêmica',
     }, {
         title: 'Competências',
         route: 'competencias',
         icon: 'lightbulb',
-        label: 'Ver competências',
+        label: 'Soft Skills, competências gerais e técnicas',
     }, {
         title: 'Experiência',
         route: 'experiencia',
         icon: 'work',
-        label: 'Experiências',
+        label: 'Experiência de mercado',
     }, {
         title: 'Galeria',
         route: 'galeria',
         icon: 'collections',
-        label: 'Galeria',
+        label: 'Galeria de Felipe',
     } ,{
         title: 'Contato',
         route: 'contato',
         icon: 'perm_phone_msg',
-        label: 'Contato',
+        label: 'Entre em contato',
     }
 ];
