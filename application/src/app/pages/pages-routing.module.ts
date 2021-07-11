@@ -12,12 +12,16 @@ const routes: Routes = [
       loadChildren: () => import("../pages/home/home.module").then(m => m.HomeModule)
     },
     {
-      path: 'galeria',
-      loadChildren: () => import("../pages/galeria/galeria.module").then(m => m.GaleriaModule)
+      path: 'formacao',
+      loadChildren: () => import("../pages/formacao/formacao.module").then(m => m.FormacaoModule)
     },
     {
       path: 'competencias',
       loadChildren: () => import("../pages/competencias/competencias.module").then(m => m.CompetenciasModule)
+    },
+    {
+      path: 'galeria',
+      loadChildren: () => import("../pages/galeria/galeria.module").then(m => m.GaleriaModule)
     },
     {
       path: 'contato',
