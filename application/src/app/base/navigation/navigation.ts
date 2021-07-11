@@ -18,7 +18,7 @@ export const navigation: MenuItem[] = [
         label: 'Ver competências',
     }, {
         title: 'Experiência',
-        route: 'none',
+        route: 'experiencia',
         icon: 'work',
         label: 'Experiências',
     }, {

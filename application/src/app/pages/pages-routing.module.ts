@@ -20,6 +20,10 @@ const routes: Routes = [
       loadChildren: () => import("../pages/competencias/competencias.module").then(m => m.CompetenciasModule)
     },
     {
+      path: 'experiencia',
+      loadChildren: () => import("../pages/experiencia/experiencia.module").then(m => m.ExperienciaModule)
+    },
+    {
       path: 'galeria',
       loadChildren: () => import("../pages/galeria/galeria.module").then(m => m.GaleriaModule)
     },
