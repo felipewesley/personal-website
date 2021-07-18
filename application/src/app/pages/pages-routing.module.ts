@@ -30,6 +30,10 @@ const routes: Routes = [
     {
       path: 'contato',
       loadChildren: () => import("../pages/contato/contato.module").then(m => m.ContatoModule)
+    },
+    {
+      path: 'knowledge-base',
+      loadChildren: () => import("../pages/knowledge-base/knowledge-base.module").then(m => m.KnowledgeBaseModule)
     }
 ];
 

@@ -26,7 +26,12 @@ export const navigation: MenuItem[] = [
         route: 'galeria',
         icon: 'collections',
         label: 'Galeria de Felipe',
-    } ,{
+    } , {
+        title: 'Knowledge Base',
+        route: 'knowledge-base',
+        icon: 'feed',
+        label: 'Base de conhecimento - by Felipe',
+    } , {
         title: 'Contato',
         route: 'contato',
         icon: 'perm_phone_msg',
