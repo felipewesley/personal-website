@@ -6,12 +6,20 @@
       <mat-icon>info_outline</mat-icon>
       <div>
         <span>
-          Esta base de conhecimento é mantida por Felipe Wesley Basso, construída ao longo do processo de aprendizado.
+          Esta base de conhecimento é mantida por Felipe Wesley Basso.
+        </span>
+        <span>
+          As publicações foram construídas ao longo do processo de aprendizado das ferramentas.
         </span>
         <span>
           O intuito desta seção é ajudar outros estudantes com os tópicos aqui apresentados.
         </span>
       </div>
     </mat-card>
+  </div>
+  <div class="container__content mt-20">
+    <div class="grid-categorias">
+      <app-grid-categorias [categorias]="(categorias$ | async)"></app-grid-categorias>
+    </div>
   </div>
 </div>

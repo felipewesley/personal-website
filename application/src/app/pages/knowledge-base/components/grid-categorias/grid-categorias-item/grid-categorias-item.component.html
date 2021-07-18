@@ -1,0 +1,20 @@
+<div class="container mat-elevation-z4" matRipple (click)="showVisitBtn()">
+  <header class="container__header"></header>
+  <article class="container__content p-20">
+    <div class="name">
+      <h3>{{ categoria.nome }}</h3>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="description mt-10">
+      {{ categoria.descricao }}
+    </div>
+  </article>
+  <footer class="container__footer p-20 pt-0" *ngIf="visitIsVisible$ | async">
+    <div class="content">
+      <button mat-raised-button color="warn"
+        [routerLink]="['categoria', categoria.categoriaId, shortName]">
+        Ver categoria
+      </button>
+    </div>
+  </footer>
+</div>

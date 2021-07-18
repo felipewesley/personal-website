@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { KnowledgeBaseService } from './services/knowledge-base.service';
 
 @Component({
   selector: 'app-knowledge-base',
@@ -7,7 +9,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class KnowledgeBaseComponent implements OnInit {
 
-  constructor() { }
+  public categorias$ = this.service.categorias$;
+
+  constructor(private service: KnowledgeBaseService) { }
 
   ngOnInit() {
   }
