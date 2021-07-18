@@ -1,0 +1,12 @@
+.card {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
