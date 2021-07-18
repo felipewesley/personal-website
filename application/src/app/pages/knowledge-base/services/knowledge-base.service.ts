@@ -67,6 +67,4 @@ export class KnowledgeBaseService {
     return this._publicacoes.getValue().find(p => p.publicacaoId == publicacaoId)?.titulo;
   }
 
-  public makeShortName = (name: string): string => name.replace(/[^a-zA-Z0-9]/g,'-').toLowerCase();
-
 }

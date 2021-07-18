@@ -18,7 +18,14 @@
     </mat-card>
   </div>
   <div class="container__content mt-20">
-    <div class="grid-categorias">
+    <div class="header mb-10">
+      <mat-icon class="mr-10">label_important</mat-icon>
+      <span>
+        Categorias de publicações
+      </span>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="grid-categorias mt-10">
       <app-grid-categorias [categorias]="(categorias$ | async)"></app-grid-categorias>
     </div>
   </div>
